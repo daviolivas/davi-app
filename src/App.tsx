@@ -4,9 +4,12 @@ import WhoIAm from './components/WhoIAm'
 
 function App() {
   return <>
-    <div className='flex items-center justify-center gap-5 bg-slate-700 h-screen'>
-      <Card></Card>
-      <WhoIAm></WhoIAm>
+    <div className='flex flex-col items-center min-h-screen bg-gradient-to-bl from-white bg-slate-200 justify-center'>
+      <div className='flex flex-col lg:flex-row gap-16 grow justify-center items-center'>
+        <Card></Card>
+        <WhoIAm></WhoIAm>
+      </div>      
+      {/* <Footer></Footer> */}
     </div>
   </>
 }
